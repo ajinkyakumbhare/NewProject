@@ -1,0 +1,39 @@
+<!--
+  @Company Name      : Persistent Systems Limited
+  @Developer Name    : Ajinkya Kumbhare
+  @Project Name      : Edcast
+  @Last Modified On  : 06-16-2026
+  @Team Name         : Galaxy Team
+  @Last Modified By  : Ajinkya Kumbhare
+-->
+<template>
+    <lightning-card title="LDS With Custom view">
+    <lightning-record-view-form
+        record-id={recordId}
+        object-api-name={objectApiName}>
+
+        <!--Custom layput-->
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="CaseNumber"></lightning-output-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="Priority"></lightning-output-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="Status"></lightning-output-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="Reason"></lightning-output-field>
+            </div>
+
+            <div class="slds-col slds-size_1-of-2">
+                <lightning-output-field field-name="Type"></lightning-output-field>
+            </div>
+        </div>
+    </lightning-record-view-form>
+    </lightning-card>
+</template>

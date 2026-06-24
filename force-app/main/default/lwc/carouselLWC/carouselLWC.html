@@ -1,0 +1,31 @@
+<!--
+  @Company Name      : Persistent System Limited
+  @Developer         : Ajinkya Kumbhare
+  @Project Name      : EdCast
+  @Group Name        : EdCast Version 1.1
+  @last modified on  : 05-21-2025
+  @last modified by  : Ajinkya Kumbhare
+-->
+<!-- optimized solution -->
+<template>
+  <lightning-carousel>
+    <!-- check jo player of object h wo empty to nhi h. Here what we have done is
+    created an array of object the with the help of for each loop simply in one
+    lightnig image caroseul we are able to show image. -->
+
+    <template if:true={players}>
+      <!-- one by one data will movve to football -->
+      <template for:each={players} for:item="football">
+        <lightning-carousel-image
+          key={football.id}
+          src={football.src}
+          header={football.header}
+          description="goal king"
+          alternative-text="Test"
+          href={football.href}
+        >
+        </lightning-carousel-image>
+      </template>
+    </template>
+  </lightning-carousel>
+</template>

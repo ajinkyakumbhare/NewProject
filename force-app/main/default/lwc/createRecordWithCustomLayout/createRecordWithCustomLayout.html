@@ -1,0 +1,46 @@
+<!--
+  @Company Name      : Persistent Systems Limited
+  @Developer Name    : Ajinkya Kumbhare
+  @Project Name      : Edcast
+  @Last Modified On  : 06-17-2026
+  @Team Name         : Galaxy Team
+  @Last Modified By  : Ajinkya Kumbhare
+-->
+<template>
+    <lightning-card title="Create a Record with custom layout without Apex">
+        <lightning-record-edit-form
+        object-api-name="Case"
+        >
+
+        <lightning-message></lightning-message>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="Subject"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-3 " >
+                    <lightning-input-field field-name="Reason"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="Type"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="Origin"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="SLAViolation__c"></lightning-input-field>
+                </div>
+
+                <div class="slds-col slds-size_1-of-3">
+                    <lightning-input-field field-name="Description"></lightning-input-field>
+                </div>
+                <lightning-button type="Submit" label="Create"></lightning-button>
+                <lightning-button type="reset" label="Reset"></lightning-button>
+
+            </div>
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

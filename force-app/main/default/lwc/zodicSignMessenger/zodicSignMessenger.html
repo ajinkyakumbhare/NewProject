@@ -1,0 +1,22 @@
+<!--
+  @Company Name      : Persistent Systems Limited
+  @Developer Name    : Ajinkya Kumbhare
+  @Project Name      : Edcast
+  @Last Modified On  : 06-09-2026
+  @Team Name         : Galaxy Team
+  @Last Modified By  : Ajinkya Kumbhare
+-->
+
+<template>
+    <lightning-card title="Find your Zodic Match">
+            <lightning-input class = "slds-m-around_medium" value={username} onchange={handleNameChange} type="text" label="Enter your Name"></lightning-input>
+            <lightning-input class = "slds-m-around_medium" value={userBirthdate}  onchange={handleDateChange} type="date" label="Enter your date of birth" ></lightning-input>
+            <lightning-button variant="brand" label="Hit it" title="hit it" onclick={handleSubmit} class = "slds-align_absolute-center slds-m-around_medium"></lightning-button>
+
+
+    </lightning-card>
+    
+ 
+
+
+</template>

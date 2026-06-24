@@ -1,0 +1,24 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 06-08-2026
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+
+<template>
+
+    <lightning-card title="One Way Data Binding in LWC">
+            Hello  {userName}...!
+            Your currently at {subcriberScore} as of {currentTime}.
+            <br/>
+             You have watched {totalLessonsWatched} lessons.
+    </lightning-card>
+    <br/>
+    <br/>
+    <lightning-card title="Two Way Data Binding in LWC">
+            <lightning-input value={MemberStatus} onchange={updateMemberStatus} type="text" label="Enter your Current Status here"></lightning-input>
+    </lightning-card>
+
+        <p>Value type is :-  {MemberStatus}</p>
+</template>

@@ -1,0 +1,21 @@
+<!--
+  @Company Name      : Persistent Systems Limited
+  @Developer Name    : Ajinkya Kumbhare
+  @Project Name      : Edcast
+  @Last Modified On  : 06-10-2026
+  @Team Name         : Galaxy Team
+  @Last Modified By  : Ajinkya Kumbhare
+-->
+<template>
+    <lightning-card title="Reactivity Check Component">
+        <div class="slds-m-around_medium">
+        {userAddress}
+        <br/> <br/>
+        <lightning-button onclick={updateAddress} label="Cheack Reactivity "></lightning-button>
+        <br/> <br/>
+        <c-reactivity-within-child user-address={userAddress} personal-details={myPersonalDetails}></c-reactivity-within-child>
+
+        </div>
+
+    </lightning-card>
+</template>

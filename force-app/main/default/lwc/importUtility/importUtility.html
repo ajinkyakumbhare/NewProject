@@ -1,0 +1,26 @@
+<!--
+  @Company Name      : Persistent Systems Limited
+  @Developer Name    : Ajinkya Kumbhare
+  @Project Name      : Edcast
+  @Last Modified On  : 06-10-2026
+  @Team Name         : Galaxy Team
+  @Last Modified By  : Ajinkya Kumbhare
+-->
+<template>
+    <lightning-card title="Import Utility" icon-name="utility:import">
+        <div class="slds-p-horizontal_medium">
+          <img src = {src}/>
+        </div>
+
+         <template lwc:if={ShowinProduction}>
+        Welcome to Production system
+         </template>
+
+         <template lwc:else>
+        Welcome toyour Sandbox system
+            </template>
+    </lightning-card>
+
+
+   
+</template>
